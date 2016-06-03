@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 主界面布局 -->
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:layout_alignParentBottom="true" >
+        <RadioButton
+            android:id="@+id/module1"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/nearjob" 
+            android:text="模块一"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/module2"
+             style="@style/main_tab_bottom"
+           android:drawableTop="@drawable/publish" 
+            android:text="模块二"
+            />
+        <RadioButton
+            android:id="@+id/module3"
+             style="@style/main_tab_bottom"
+           android:drawableTop="@drawable/near" 
+            android:text="模块三"
+             />
+        <RadioButton
+            android:id="@+id/module4"
+             style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/my" 
+            android:text="模块四"
+          />
+    </RadioGroup>
+    <com.example.frameclass.MyViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/group"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>
